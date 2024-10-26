@@ -24,13 +24,13 @@ const Header = ({ keyword, setKeyword, handleSearch }) => {
 
   return (
     <header className="container-fluid" style={headerStyle}>
-      <div className="container text-center" id="searchBox">
+      <div className="text-center" id="searchBox">
         <h1>
           <img src="logo.png" alt="Rosearch" />
         </h1>
         <div className="form col-xs-12">
           <input
-            className="col-xs-9"
+            className="col-xs-11 text-center"
             id="searchBar"
             type="text"
             placeholder="search for a word or sentence"
@@ -38,13 +38,13 @@ const Header = ({ keyword, setKeyword, handleSearch }) => {
             onChange={handleInputChange}
             onKeyPress={handleKeyPress}
           />
-          <span
+          <div
             className="glyphicon glyphicon-search col-xs-1"
             onClick={() => {
               handleSearch();
               animateHeader();
             }}
-          ></span>
+          ></div>
         </div>
       </div>
     </header>
