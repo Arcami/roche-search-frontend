@@ -24,7 +24,7 @@ const Header = ({ keyword, setKeyword, handleSearch }) => {
 
   return (
     <header className="container-fluid" style={headerStyle}>
-      <div className="text-center" id="searchBox">
+      <div id="searchBox">
         <h1>
           <img src="logo.png" alt="Rosearch" />
         </h1>
